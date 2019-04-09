@@ -29,6 +29,7 @@ LogAnalyzer.run(<fpath>)
 Also includes a command-line script, from gem-root, run:
 ```
 ./bin/log_analyzer <fpath>
+./bin/log_analyzer  # Runs for the default webserver.log included in the repo
 ```
 
 ## Development
