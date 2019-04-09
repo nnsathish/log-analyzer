@@ -30,7 +30,7 @@ module LogAnalyzer
     def group_visits
       result = {}
       self.entries.each do |le|
-        result[le.url] ||= { :total_views => 0 }
+        result[le.url] ||= { total_views: 0, unique_views: 0 }
         result[le.url][le.ip] ||= 1
         result[le.url][:total_views] += 1
         result[le.url][:unique_views] = result[le.url].size - 2

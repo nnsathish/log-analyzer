@@ -37,7 +37,7 @@ RSpec.describe LogAnalyzer do
         it 'groups duplicate entries for most_views' do
           is_expected.not_to be_empty
           expect(result[:total_views]).to eq([['/page1', 2], ['/page2', 1]])
-          expect(result[:unique_views]).to eq([['/page1', 1], ['/page2', 1]])
+          expect(result[:unique_views]).to eq([['/page2', 1], ['/page1', 1]])
         end
       end
       context 'with duplicate entries and unique views' do
