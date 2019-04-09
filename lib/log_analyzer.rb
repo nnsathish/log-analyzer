@@ -1,6 +1,8 @@
-require "log_analyzer/version"
+require 'log_analyzer/version'
 
 module LogAnalyzer
   class Error < StandardError; end
-  # Your code goes here...
+
+  def self.run(fpath)
+  end
 end
